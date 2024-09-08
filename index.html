@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: monospace;
+        }
+
+        nav {
+            padding: 5px 10px;
+            background-color: gray;
+        }
+
+        .links {
+            list-style: none;
+        }
+
+        .links li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .links li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav h1 {
+            padding: 0;
+            margin: 0;
+            color: white;
+        }
+
+        nav .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-sample {
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 1px 2px rgba(0, 0, 0, 0.25);
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            margin-top: 30px;
+            color: white;
+        }
+        .form{
+            margin-top: 30px;
+        }
+        .form-sample form{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 100%;
+            padding: 10%;
+        }
+        .form-sample form input{
+            padding: 5px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: none;
+        }
+        .form-sample .submit-btn{
+            background-color: lightgray;
+            color: black;
+            align-self: center;
+            width: 30%;
+        }
+        footer{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 10vh;
+            background-color: gray;
+        }
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="card">
+        <div class="card-sample">
+            <h1>This is a card!</h1>
+        </div>
+    </div>
+    <div class="form">
+        <div class="form-sample card-sample">
+            <form>
+                <h1>This is a form!</h1>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+
+                <input type="email" name="email" id="email">
+                <label for="password">Password:</label>
+
+                <input type="password" name="password" id="password">
+
+                <input class="submit-btn" type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div>
+                <a href="#">My Facebook</a>
+            </div>
+            <div>
+                <a href="#">Copyright</a>
+            </div>
+            <div>
+                <a href="#">Terms and Conditions</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
